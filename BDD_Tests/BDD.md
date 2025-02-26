@@ -1,0 +1,102 @@
+# BDD Testing With ReqnRoll
+
+## Project Setup
+
+### Setup a new project
+
+Go to the directory your projects are in and run (change the project name though):
+```
+mkdir SAMPLE_BDD
+cd SAMPLE_BDD
+dotnet new reqnroll-project
+dotnet add reference ../MAIN_PROJECT
+dotnet sln .. add SAMPLE_BDD.csproj
+```
+
+### Add Packages
+```
+dotnet add package Reqnroll.NUnit
+dotnet add package NUnit
+dotnet add package NUnit3TestAdapter
+```
+
+### VSCode Setup
+
+Install the [Cucumber](https://marketplace.visualstudio.com/items?itemName=CucumberOpen.cucumber-official) Extension for vscode
+
+At the top level of your repository, create ``.vscode/settings.json`` and add the suggested configuration to allow allow cucumber to properly detect the structure of your project (change the project path)
+
+```
+{
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": { 
+        "*.feature": "${capture}.feature.cs"
+    },
+    "files.exclude": { 
+        "**/obj/": true,
+        "**/bin/": true,
+    },
+    "cucumber.glue": [ 
+        "SAMPLE_BDD/StepDefinitions/**/*.cs",
+    ],
+    "cucumber.features": [
+        "SAMPLE_BDD/Features/**/*.feature",
+    ]
+}
+```
+
+This should get things like autocomplete and error detection working for reqnroll.
+
+
+## Writing Tests
+
+There are two parts to reqnroll tests: features and step definitions.
+
+Features are where you can use Gherkin syntax to write tests that look like the acceptance criteria of a user story.
+
+The default example upon making a project is a test for a calculator
+
+```
+Feature: Calculator
+
+Simple calculator for adding two numbers
+
+@mytag
+Scenario: Add two numbers
+	Given the first number is 50
+	And the second number is 70
+	When the two numbers are added
+	Then the result should be 120
+```
+This represents the feature part. This part is done, but it won't work as a test without a step definition.
+
+Step definitions, as the name would suggest, define the steps within a scenario. The scenario above has 4 steps, which is recognized by reqnroll because of the keywords Given, And, When, and Then. A step definition is needed for each.
+
+Take the first step. All it says is that the first number is 50. We can write a step definition and set a variable to that value on the correlated step:
+
+```
+    private int num1;
+
+    [Given("the first number is {int}")]
+    public void GivenTheFirstNumberIs(int number)
+    {
+        num1 = number;
+    }
+```
+This will now run upon testing on the first step. The second and third steps are quite similar.
+
+The final "Then" is when things are actually tested. With this setup, we can just use NUnit assertions for this.
+
+First add `` using NUnit.Framework;`` to the file, and then we can set a step definition that resolves the scenario.
+
+```
+    [Then("the result should be {int}")]
+    public void ThenTheResultShouldBe(int result)
+    {
+        Assert.That(sum, Is.EqualTo(result)); //sum set in a previous step
+    }
+```
+
+## Why
+
+This is all a lot for tests that could theoretically just be unit tests. It is situationally preferred though due to the readability of Gherkin syntax and the ability to reuse step definitions across multiple tests. Also reqnroll has some extra tools.

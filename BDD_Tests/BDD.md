@@ -24,7 +24,7 @@ dotnet add package NUnit3TestAdapter
 
 Install the [Cucumber](https://marketplace.visualstudio.com/items?itemName=CucumberOpen.cucumber-official) Extension for vscode
 
-At the top level of your repository, create ``.vscode/settings.json`` and add the suggested configuration to allow allow cucumber to properly detect the structure of your project (change the project path)
+At the top level of your repository, create ``.vscode/settings.json`` and add the suggested configuration to allow cucumber to properly detect the structure of your project (change the project path)
 
 ```
 {
@@ -70,7 +70,7 @@ Scenario: Add two numbers
 ```
 This represents the feature part. This part is done, but it won't work as a test without a step definition.
 
-Step definitions, as the name would suggest, define the steps within a scenario. The scenario above has 4 steps, which is recognized by reqnroll because of the keywords Given, And, When, and Then. A step definition is needed for each.
+Step definitions, as the name would suggest, define the steps within a scenario. The scenario above has 4 steps, which is recognized by reqnroll through use of the keywords Given, And, When, and Then. A step definition is needed for each.
 
 Take the first step. All it says is that the first number is 50. We can write a step definition and set a variable to that value on the correlated step:
 

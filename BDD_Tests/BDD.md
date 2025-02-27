@@ -20,11 +20,11 @@ dotnet add package NUnit
 dotnet add package NUnit3TestAdapter
 ```
 
-### VSCode Setup
+### VSCode Setup (Optional)
 
 Install the [Cucumber](https://marketplace.visualstudio.com/items?itemName=CucumberOpen.cucumber-official) Extension for vscode
 
-At the top level of your repository, create ``.vscode/settings.json`` and add the suggested configuration to allow cucumber to properly detect the structure of your project (change the project path)
+At the top level of your repository, create ``.vscode/settings.json`` and add the suggested configuration to allow cucumber to properly detect the structure of your project (change the project path though)
 
 ```
 {
@@ -85,17 +85,30 @@ Take the first step. All it says is that the first number is 50. We can write a 
 ```
 This will now run upon testing on the first step. The second and third steps are quite similar.
 
-The final "Then" is when things are actually tested. With this setup, we can just use NUnit assertions for this.
-
-First add `` using NUnit.Framework;`` to the file, and then we can set a step definition that resolves the scenario.
+The final "Then" statement is when things are actually tested. ReqnRoll by default includes FluentAssertions, which just provides another way to write assertions.
+First add ``using FluentAssertions;`` to the file, then we can set a step definition. 
 
 ```
     [Then("the result should be {int}")]
     public void ThenTheResultShouldBe(int result)
     {
-        Assert.That(sum, Is.EqualTo(result)); //sum set in a previous step
+        sum.Should().Be(result); // sum set in a previous step
     }
 ```
+
+With this setup, we could also just use NUnit assertions for this if we wanted. Here is how we would do that:
+
+Add ``using NUnit.Framework;`` to the file, then we can set a step definition.
+
+```
+    [Then("the result should be {int}")]
+    public void ThenTheResultShouldBe(int result)
+    {
+        Assert.That(sum, Is.EqualTo(result)); // sum set in a previous step
+    }
+```
+
+Both of these methods work. 
 
 ## Why
 

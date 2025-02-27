@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Other\\Projects\\CSDemos\\Demo1\\BDD_Tests\\BDD_Tests.csproj": {}
+    "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\BDD_Tests\\BDD_Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Other\\Projects\\CSDemos\\Demo1\\BDD_Tests\\BDD_Tests.csproj": {
+    "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\BDD_Tests\\BDD_Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Other\\Projects\\CSDemos\\Demo1\\BDD_Tests\\BDD_Tests.csproj",
+        "projectUniqueName": "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\BDD_Tests\\BDD_Tests.csproj",
         "projectName": "BDD_Tests",
-        "projectPath": "C:\\Users\\Other\\Projects\\CSDemos\\Demo1\\BDD_Tests\\BDD_Tests.csproj",
-        "packagesPath": "C:\\Users\\Other\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Other\\Projects\\CSDemos\\Demo1\\BDD_Tests\\obj\\",
+        "projectPath": "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\BDD_Tests\\BDD_Tests.csproj",
+        "packagesPath": "C:\\Users\\BMAN5\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\BDD_Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Other\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BMAN5\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Other\\Projects\\CSDemos\\Demo1\\Demo1_Project\\Demo1_Project.csproj": {
-                "projectPath": "c:\\Users\\Other\\Projects\\CSDemos\\Demo1\\Demo1_Project\\Demo1_Project.csproj"
+              "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\Demo1_Project\\Demo1_Project.csproj": {
+                "projectPath": "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\Demo1_Project\\Demo1_Project.csproj"
               }
             }
           }
@@ -90,17 +90,17 @@
         }
       }
     },
-    "c:\\Users\\Other\\Projects\\CSDemos\\Demo1\\Demo1_Project\\Demo1_Project.csproj": {
+    "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\Demo1_Project\\Demo1_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Other\\Projects\\CSDemos\\Demo1\\Demo1_Project\\Demo1_Project.csproj",
+        "projectUniqueName": "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\Demo1_Project\\Demo1_Project.csproj",
         "projectName": "Demo1_Project",
-        "projectPath": "c:\\Users\\Other\\Projects\\CSDemos\\Demo1\\Demo1_Project\\Demo1_Project.csproj",
-        "packagesPath": "C:\\Users\\Other\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Other\\Projects\\CSDemos\\Demo1\\Demo1_Project\\obj\\",
+        "projectPath": "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\Demo1_Project\\Demo1_Project.csproj",
+        "packagesPath": "C:\\Users\\BMAN5\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\Demo1_Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Other\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BMAN5\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

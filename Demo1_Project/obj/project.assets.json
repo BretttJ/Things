@@ -7740,19 +7740,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Other\\.nuget\\packages\\": {}
+    "C:\\Users\\BMAN5\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Other\\Projects\\CSDemos\\Demo1\\Demo1_Project\\Demo1_Project.csproj",
+      "projectUniqueName": "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\Demo1_Project\\Demo1_Project.csproj",
       "projectName": "Demo1_Project",
-      "projectPath": "C:\\Users\\Other\\Projects\\CSDemos\\Demo1\\Demo1_Project\\Demo1_Project.csproj",
-      "packagesPath": "C:\\Users\\Other\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Other\\Projects\\CSDemos\\Demo1\\Demo1_Project\\obj\\",
+      "projectPath": "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\Demo1_Project\\Demo1_Project.csproj",
+      "packagesPath": "C:\\Users\\BMAN5\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BMAN5\\OneDrive\\Desktop\\Idk\\StuffnThings\\Demo1_Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Other\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BMAN5\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -1,5 +1,6 @@
 using Reqnroll;
-using NUnit.Framework;
+// using NUnit.Framework;
+using FluentAssertions;
 
 namespace BDD_Tests.StepDefinitions;
 
@@ -44,7 +45,7 @@ public sealed class CalculatorStepDefinitions
     public void ThenTheResultShouldBe(int result)
     {
         //TODO: implement assert (verification) logic
-        Assert.That(sum, Is.EqualTo(result));
+        sum.Should().Be(result);
         // throw new PendingStepException();
     }
 }

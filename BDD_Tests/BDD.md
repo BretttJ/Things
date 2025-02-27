@@ -83,7 +83,7 @@ Take the first step. All it says is that the first number is 50. We can write a 
         num1 = number;
     }
 ```
-This will now run upon testing on the first step. The second and third steps are quite similar.
+This will now run when testing on the first step. The second and third steps are quite similar.
 
 The final "Then" statement is when things are actually tested. ReqnRoll by default includes FluentAssertions, which just provides another way to write assertions.
 First add ``using FluentAssertions;`` to the file, then we can set a step definition. 
@@ -96,9 +96,9 @@ First add ``using FluentAssertions;`` to the file, then we can set a step defini
     }
 ```
 
-With this setup, we could also just use NUnit assertions for this if we wanted. Here is how we would do that:
+With this setup, we could also just use basic NUnit assertions for this if we wanted.
 
-Add ``using NUnit.Framework;`` to the file, then we can set a step definition.
+To do this, first add ``using NUnit.Framework;`` to the file. Then, the syntax is exactly the same as in Unit Testing:
 
 ```
     [Then("the result should be {int}")]
@@ -110,6 +110,8 @@ Add ``using NUnit.Framework;`` to the file, then we can set a step definition.
 
 Both of these methods work. 
 
+To run these tests, it is the same as an NUnit Test Project. Either run ``dotnet test`` or just click run in the testing tab in vscode.
+
 ## Why
 
-This is all a lot for tests that could theoretically just be unit tests. It is situationally preferred though due to the readability of Gherkin syntax and the ability to reuse step definitions across multiple tests. Also reqnroll has some extra tools.
+This is all a lot for tests that could theoretically just be unit tests. It is situationally preferred though due to the readability of Gherkin syntax and the ability to reuse step definitions across multiple tests. Also reqnroll has some extra tools that can be helpful.
